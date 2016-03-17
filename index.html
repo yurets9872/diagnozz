@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
     
+    <link rel="stylesheet" type="text/css" href="css/indexAudio.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   	
 	<title>Diagnozz</title>
@@ -83,20 +85,28 @@
 	<div class="content">
 		<div class="album">
 		    <div class="alb-pic">
-		        <img src="../gh-pages/img/alb-pic.jpg" alt="">
+		        <img src="img/alb-pic.jpg" alt="">
 		    </div>
 		    <div class="alb-name"><span>Назва:</span> Людина</div>
 		    <div class="alb-date"><span>Дата виходу:</span> 16.02.2016</div>
 <!--		    <div class="alb-quant">16</div>-->
 		    <div class="alb-discr"><span>Опис:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architіecto numquam, totam iusto officia earum perferendis.</div>
 		</div>
-		<div class="songs"></div>
+		<div class="songs">
+<!--
+		    <audio src="mp3/Eksponat.mp3" preload="auto" />
+		    <audio src="mp3/Red%20Hot%20Chili%20Peppers%20-%20The%20Adventures%20of%20Rain%20Dance%20Maggie.mp3" preload="auto" />
+		    <audio src="mp3/Yellowcard%20-%20Date%20Line%20(I%20Am%20Gone).mp3" preload="auto" />
+		    <audio src="mp3/Three%20Days%20Grace%20-%20Are%20You%20Ready.mp3" preload="auto" />
+-->
+		</div>
 		</div>
 	</section><!-- cd-section -->
 
 	<section id="section3" class="cd-section">
 	<div class="overlay"></div>
 		<div class="content">
+        <div class="tourTable">
 		    <table class="table">
     <thead>
       <tr>
@@ -230,6 +240,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 		</div>
 	</section><!-- cd-section -->
 
@@ -250,9 +261,22 @@
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src="js/bootstrap.js"></script>
 <script src="js/modernizr.js"></script> <!-- Modernizr -->
+<script src="audiojs/audio.min.js"></script>
+
+ <script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+
+
+
+<!--
 <script type="text/javascript" src="js/myplaylist.js"></script>
 <script type="text/javascript" src="plugin/jquery-jplayer/jquery.jplayer.js"></script>
 <script type="text/javascript" src="plugin/ttw-music-player-min.js"></script>
+-->
+<!--
 <script type="text/javascript">
         $(document).ready(function(){
             var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id tortor nisi. Aenean sodales diam ac lacus elementum scelerisque. Suspendisse a dui vitae lacus faucibus venenatis vel id nisl. Proin orci ante, ultricies nec interdum at, iaculis venenatis nulla. ';
@@ -266,5 +290,6 @@
             });
         });
     </script>
+-->
 </body>
 </html>
