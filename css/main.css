@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.logo{
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    width: 150px;
+    z-index: 100;
+    position: relative;
+}
+.social{
+    float: right;
+    width: 150px;
+    position: relative;
+    z-index: 100;
+}
+.social i{
+    width: 25px;
+    height: 25px;
+    
+color: #fff;
+float: left;
+margin: 0 6px;
+border-radius: 50%;
+}
+
+h1.main-title{
+    color: #fff;
+    font-size: 36px;
+    max-width: 680px;
+    padding: 15px;
+    margin-top: -45px;
+}
+
+/*    SECTION 2    */
+
+.album{
+    width: 30%;
+    float: left;
+}
+.album span{
+    font-weight: bold;
+    color: #fff;
+}
+.album .alb-pic{
+     max-width: 325px;
+    color: #fff;
+}
+.album .alb-name{
+     max-width: 325px;
+    color: #fff;
+    margin: 15px 0;
+}
+.album .alb-date{
+     max-width: 325px;
+    color: #fff;
+    margin: 15px 0;
+}
+.album .alb-discr{
+     max-width: 325px;
+    color: #fff;
+}
+
+/*    SECTION 3    */
+
+table{
+    color:#fff;
+    z-index: 100;
+    position: relative;
+}
+table thead tr th.tourDate{
+    text-align: center;
+    width: 9%;
+}
+table thead tr th.tourCity{
+    text-align: center;
+    width: 27%;
+}
+table thead tr th.tourPlace{
+    text-align: center;
+    width: 27%;
+}
+table thead tr th.tourSoc{
+    text-align: center;
+    width: 27%;
+}
+table thead tr th.tourBuy{
+    text-align: center;
+    width: 11%;
+}
+
+
+
+table thead tr{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+table thead tr:hover{
+    background-color: transparent;
+}
+table tr:hover{
+    background-color: rgba(247,247,247,0.1);
+    transition: 350ms;
+}
+table tbody tr td .tourDate{
+    text-align: center;
+    width: 100%;
+}
+table tbody tr td .tourDate .num{
+    font-size: 24px;
+    font-weight: bolder;
+}
+table tbody tr td .tourDate .mon{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+table tbody tr td .tourCity{
+    text-align: center;
+    width: 100%;
+        font-size: 16px;
+    margin-top: 15px;
+}
+table tbody tr td .tourPlace{
+    text-align: center;
+    width: 100%;
+        font-size: 16px;
+   margin-top: 15px;
+}
+table tbody tr td .tourSoc .socWrapper{
+    margin: 10px auto;
+    width: 90px;
+}
+table tbody tr td .tourBuy{
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+table .tourSoc a{
+    width: 25px;
+    float: left;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+table .tourSoc a:hover{
+    color: #ccc;
+transition: 350ms;
+}
+table .tourBuy a{
+    padding: 8px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:2px;
+    text-decoration: none;
+}
+table .tourBuy a:hover{
+    color: #000;
+    border: 1px solid #fff;
+    text-decoration: none;
+    background-color: #fff;
+    transition: 350ms;
+}
+
