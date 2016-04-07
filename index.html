@@ -14,6 +14,51 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">    <!-- Bootstrap theme -->
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+     <link rel="stylesheet" href="dist/APlayer.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .container {
+            max-width: 32rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 54px;
+            color: #333;
+            margin: 30px 0 10px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #555;
+        }
+        h3 {
+            font-size: 24px;
+            color: #555;
+        }
+        hr {
+            display: block;
+            width: 7rem;
+            height: 1px;
+            margin: 2.5rem 0;
+            background-color: #eee;
+            border: 0;
+        }
+        a {
+            color: #08c;
+            text-decoration: none;
+        }
+        p {
+            font-size: 18px;
+        }
+        
+        .aplayer-played{
+            background:#4C0D1C;
+        }
+    </style>
   	
 	<title>Diagnozz</title>
 </head>
@@ -22,11 +67,12 @@
 	<div class="wrapper">
 	    <div class="main">
 	        <header>
+<!--
             <div class="headerInner">
 	            <div class="logo">Diagnozz</div>
 	            <nav>
 	                <ul>
-<!--	                    <li><a href="#">Головна</a></li>-->
+	                    <li><a href="#">Головна</a></li>
 	                    <li><a href="../NEW/html/events.html">Афіша</a></li>
 	                    <li><a href="../NEW/html/music.html">Музика</a></li>
 	                    <li><a href="../NEW/html/media.html">Медіа</a></li>
@@ -35,27 +81,50 @@
 	                </ul>
 	            </nav>
 	            </div>
+-->
 	        </header>
 	        <div class="content">
-	            <h1 class="mainTitle">Збережи свій діагноз "Людина"</h1>
-	            <a href="#" class="mainBtn">Перейти на сайт</a>
+	            <h1 class="mainTitle">Diagnozz</h1>
+	            <a href="html/about.html" class="mainBtn">Перейти на сайт</a>
 <!--	            <a href="#" class="scroll"></a>-->
 	        </div>
+<!--	         <div id="player1" class="aplayer"></div>-->
 	    </div>
-<!--
 	<footer>
         <div class="content">
-	        <div class="sandglass">
-	            <a href="#">Sandglass</a>
-	        </div>
 	        <div class="social">
-	            <a href=""></a>
-	            <a href=""></a>
-	            <a href=""></a>
+	            <a href=""><i class="fa fa-vk fa-lg"></i></a>
+	            <a href=""><i class="fa fa-facebook fa-lg"></i></a>
+	            <a href=""><i class="fa fa-twitter fa-lg"></i></a>
+	            <a href=""><i class="fa fa-instagram fa-lg"></i></a>
+	            <a href=""><i class="fa fa-youtube fa-lg"></i></a>
+	            <a href=""><i class="fa fa-soundcloud fa-lg"></i></a>
+	        </div>
+	         <div class="sandglass">
+	            Створено в <a href="#">Sandglass</a>
 	        </div>
 	    </div>
 	</footer>
--->
 	</div>
+	<script src="dist/APlayer.min.js"></script>
+    <script>
+        var ap1 = new APlayer({
+            element: document.getElementById('player1'),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            mutex: true,
+            theme: '#e6d0b2',
+            music: {
+                title: 'Preparation',
+                author: 'Hans Zimmer/Richard Harvey',
+                url: 'http://7xq131.com1.z0.glb.clouddn.com/Preparation.mp3',
+                pic: 'http://7xq131.com1.z0.glb.clouddn.com/Preparation.jpg'
+            }
+        });
+        ap1.init();
+    </script>
 </body>
+
+ 
 </html>
