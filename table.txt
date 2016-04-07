@@ -1,0 +1,133 @@
+    <table class="table">
+    <thead>
+      <tr>
+        <th class="tourDate">Дата</th>
+        <th class="tourCity">Місто</th>
+        <th class="tourPlace">Місце</th>
+        <th class="tourSoc">Соціалки</th>
+        <th class="tourBuy">Квитки</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <div class="tourDate">
+                <div class="num">12</div>
+                <div class="mon">бер</div>
+            </div>
+        </td>
+        <td><div class="tourCity">Вінниця</div></td>
+        <td><div class="tourPlace">Клуб "Шкаф"</div></td>
+        <td><div class="tourSoc">
+               <div class="socWrapper">
+                <a href="" class="tourVk"><i class="fa fa-vk"></i></a>
+                <a href="" class="tourFb"><i class="fa fa-facebook"></i></a>
+                <a href="" class="tourTwitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div></td>
+        <td><div class="tourBuy">
+            <a href="" class="buyBtn">Купити</a>
+        </div></td>
+      </tr>
+       <tr>
+        <td>
+            <div class="tourDate">
+                <div class="num">12</div>
+                <div class="mon">бер</div>
+            </div>
+        </td>
+        <td><div class="tourCity">Харків</div></td>
+        <td><div class="tourPlace">Клуб "Шкаф"</div></td>
+        <td><div class="tourSoc">
+               <div class="socWrapper">
+                <a href="" class="tourVk"><i class="fa fa-vk"></i></a>
+                <a href="" class="tourFb"><i class="fa fa-facebook"></i></a>
+                <a href="" class="tourTwitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div></td>
+        <td><div class="tourBuy">
+            <a href="" class="buyBtn">Купити</a>
+        </div></td>
+      </tr>
+       <tr>
+        <td>
+            <div class="tourDate">
+                <div class="num">12</div>
+                <div class="mon">бер</div>
+            </div>
+        </td>
+        <td><div class="tourCity">Житомир</div></td>
+        <td><div class="tourPlace">Клуб "Шкаф"</div></td>
+        <td><div class="tourSoc">
+               <div class="socWrapper">
+                <a href="" class="tourVk"><i class="fa fa-vk"></i></a>
+                <a href="" class="tourFb"><i class="fa fa-facebook"></i></a>
+                <a href="" class="tourTwitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div></td>
+        <td><div class="tourBuy">
+            <a href="" class="buyBtn">Купити</a>
+        </div></td>
+      </tr>
+       <tr>
+        <td>
+            <div class="tourDate">
+                <div class="num">12</div>
+                <div class="mon">бер</div>
+            </div>
+        </td>
+        <td><div class="tourCity">Ужгород</div></td>
+        <td><div class="tourPlace">Клуб "Шкаф"</div></td>
+        <td><div class="tourSoc">
+               <div class="socWrapper">
+                <a href="" class="tourVk"><i class="fa fa-vk"></i></a>
+                <a href="" class="tourFb"><i class="fa fa-facebook"></i></a>
+                <a href="" class="tourTwitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div></td>
+        <td><div class="tourBuy">
+            <a href="" class="buyBtn">Купити</a>
+        </div></td>
+      </tr>
+       <tr>
+        <td>
+            <div class="tourDate">
+                <div class="num">12</div>
+                <div class="mon">бер</div>
+            </div>
+        </td>
+        <td><div class="tourCity">Камянець-подільський</div></td>
+        <td><div class="tourPlace">Клуб "Шкаф"</div></td>
+        <td><div class="tourSoc">
+               <div class="socWrapper">
+                <a href="" class="tourVk"><i class="fa fa-vk"></i></a>
+<!--                <a href="" class="tourFb"><i class="fa fa-facebook"></i></a>-->
+                <a href="" class="tourTwitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div></td>
+        <td><div class="tourBuy">
+            <a href="" class="buyBtn">Купити</a>
+        </div></td>
+      </tr>
+       <tr>
+        <td>
+            <div class="tourDate">
+                <div class="num">12</div>
+                <div class="mon">бер</div>
+            </div>
+        </td>
+        <td><div class="tourCity">Володимир-Волинький</div></td>
+        <td><div class="tourPlace">Клуб "Шкаф"</div></td>
+        <td><div class="tourSoc">
+               <div class="socWrapper">
+                <a href="" class="tourVk"><i class="fa fa-vk"></i></a>
+                <a href="" class="tourFb"><i class="fa fa-facebook"></i></a>
+                <a href="" class="tourTwitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div></td>
+        <td><div class="tourBuy">
+            <a href="" class="buyBtn">Купити</a>
+        </div></td>
+      </tr>
+    </tbody>
+  </table>

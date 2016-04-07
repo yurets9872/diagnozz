@@ -19,6 +19,10 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: #3e3947;
   background-color: white;
+    background-image: url(../img/5AOAY10z-OU.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 body, html {
@@ -58,11 +62,13 @@ Main components
   padding: 2em 0;
 }
 .cd-section:nth-of-type(odd) {
+/*
   background-color: #3e3947;
 background-image: url(../img/5AOAY10z-OU.jpg);
 background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+*/
     
 }
 .cd-section:nth-of-type(odd) p {
