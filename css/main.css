@@ -358,5 +358,15 @@ box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.55);
     .sandglass {
     display: none;
 }
+    #player4{
+        height: auto;!important
+    }
+    
+    .aplayer .aplayer-list{
+        float: left;
+        width: 100%;
+        margin: 0 !important;
+        padding-left: 0px !important;
+    }
     
 }
