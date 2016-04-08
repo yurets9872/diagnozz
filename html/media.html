@@ -5,51 +5,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="../css/main.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
     
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">    <!-- Bootstrap style -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">    <!-- Bootstrap theme -->
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   	
-	<title>Diagnozz</title>
+	<title>Diagnozz | About</title>
 </head>
 <body>
-<div class="staticOverlayBg"></div>
-	<div class="wrapper">
-	    <div class="main">
-	        <header>
+<section id="section1" class="cd-section">
+	 <div class="overlay"></div>
+	 <header>
+	 	<div class="content">
             <div class="headerInner">
 	            <div class="logo">Diagnozz</div>
-	            <nav>
+	             <div class="navBtn"><i class="fa fa-bars fa-lg" style="color:#fff;"></i></div>
+                <nav class="navigation">
+                <div class="close"><i class="fa fa-times"></i></div>
 	                <ul>
 <!--	                    <li><a href="#">Головна</a></li>-->
-	                 <li><a href="../html/events.html">Афіша</a></li>
+	                    <li><a href="../html/events.html">Афіша</a></li>
 	                    <li><a href="../html/music.html">Музика</a></li>
-	                    <li><a href="../html/media.html">Медіа</a></li>
+	                    <li><a class="active"  href="../html/media.html">Медіа</a></li>
 	                    <li><a href="../html/about.html">Група</a></li>
 	                    <li><a href="../html/contacts.html">Контакти</a></li>
 	                </ul>
 	            </nav>
 	            </div>
-	        </header>
-	        
-	    </div>
-	<footer>
-        <div class="content">
-	        <div class="sandglass">Створено
-	            <a href="#">Sandglass</a>
 	        </div>
+	 </header>
+	 <div class="content">
+
+    </div>
+    <footer>
+        <div class="content">
 	        <div class="social">
-	            <a href="#"> <i class="fa fa-vk"></i></a>
-	            <a href="#"><i class="fa fa-twitter"></i></a>
-	            <a href="#"><i class="fa fa-facebook"></i></a>
+	            <a href=""><i class="fa fa-vk fa-lg"></i></a>
+	            <a href=""><i class="fa fa-facebook fa-lg"></i></a>
+	            <a href=""><i class="fa fa-twitter fa-lg"></i></a>
+	            <a href=""><i class="fa fa-instagram fa-lg"></i></a>
+	            <a href=""><i class="fa fa-youtube fa-lg"></i></a>
+	            <a href=""><i class="fa fa-soundcloud fa-lg"></i></a>
+	        </div>
+	         <div class="sandglass">
+	            Створено в <a href="#">Sandglass</a>
 	        </div>
 	    </div>
 	</footer>
-	</div>
+	</section><!-- cd-section -->
+
+	<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/main.js"></script> <!-- Resource jQuery -->
+<script src="../js/modernizr.js"></script> <!-- Modernizr -->
+<script src="../js/script.js"></script> <!-- Script -->
 </body>
 </html>

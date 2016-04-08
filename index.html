@@ -1,96 +1,72 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/main.css"> <!-- Resource style -->
     
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">    <!-- Bootstrap style -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">    <!-- Bootstrap theme -->
-    
+    <link rel="stylesheet" type="text/css" href="css/">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    
-     <link rel="stylesheet" href="dist/APlayer.min.css">
-    <style>
-        body {
-            font-family: 'Helvetica  Neue', Helvetica, Arial, sans-serif;
-        }
-        .container {
-            max-width: 32rem;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 50px;
-        }
-        h1 {
-            font-size: 54px;
-            color: #333;
-            margin: 30px 0 10px;
-        }
-        h2 {
-            font-size: 22px;
-            color: #555;
-        }
-        h3 {
-            font-size: 24px;
-            color: #555;
-        }
-        hr {
-            display: block;
-            width: 7rem;
-            height: 1px;
-            margin: 2.5rem 0;
-            background-color: #eee;
-            border: 0;
-        }
-        a {
-            color: #08c;
-            text-decoration: none;
-        }
-        p {
-            font-size: 18px;
-        }
-        
-        .aplayer-played{
-            background:#4C0D1C;
-        }
-    </style>
   	
 	<title>Diagnozz</title>
 </head>
 <body>
-<div class="staticOverlayBg"></div>
-	<div class="wrapper">
-	    <div class="main">
-	        <header>
-<!--
-            <div class="headerInner">
-	            <div class="logo">Diagnozz</div>
-	            <nav>
-	                <ul>
-	                    <li><a href="#">Головна</a></li>
-	                    <li><a href="../NEW/html/events.html">Афіша</a></li>
-	                    <li><a href="../NEW/html/music.html">Музика</a></li>
-	                    <li><a href="../NEW/html/media.html">Медіа</a></li>
-	                    <li><a href="../NEW/html/about.html">Група</a></li>
-	                    <li><a href="../NEW/html/contacts.html">Контакти</a></li>
-	                </ul>
-	            </nav>
-	            </div>
--->
-	        </header>
-	        <div class="content">
-	            <h1 class="mainTitle">Diagnozz</h1>
-	            <a href="html/about.html" class="mainBtn">Перейти на сайт</a>
-<!--	            <a href="#" class="scroll"></a>-->
-	        </div>
-<!--	         <div id="player1" class="aplayer"></div>-->
-	    </div>
-	<footer>
+<!-- 	<nav id="cd-vertical-nav">
+		<ul>
+			<li>
+				<a href="#section1" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Головна</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section2" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">About</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section3" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Features</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section4" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section5" data-number="5">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Pricing</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section6" data-number="6">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Contact</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a> -->
+
+	<section id="section1" class="cd-section">
+	 <div class="overlay"></div>
+	 <div class="content">
+
+		<h1 class="main-title">Diagnozz</h1>
+		 <a href="html/events.html" class="mainBtn">Перейти на сайт</a>
+
+    </div>
+    <footer>
         <div class="content">
 	        <div class="social">
 	            <a href=""><i class="fa fa-vk fa-lg"></i></a>
@@ -105,26 +81,12 @@
 	        </div>
 	    </div>
 	</footer>
-	</div>
-	<script src="dist/APlayer.min.js"></script>
-    <script>
-        var ap1 = new APlayer({
-            element: document.getElementById('player1'),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            mutex: true,
-            theme: '#e6d0b2',
-            music: {
-                title: 'Preparation',
-                author: 'Hans Zimmer/Richard Harvey',
-                url: 'http://7xq131.com1.z0.glb.clouddn.com/Preparation.mp3',
-                pic: 'http://7xq131.com1.z0.glb.clouddn.com/Preparation.jpg'
-            }
-        });
-        ap1.init();
-    </script>
-</body>
+	</section><!-- cd-section -->
 
- 
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+</body>
 </html>
