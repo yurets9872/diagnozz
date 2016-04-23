@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 .content{
     width: 95%;
     max-width: 1440px;
     margin: 0 auto;
+    position: relative;
+    z-index: 20;
 }
 header{
     width: 100%;
@@ -30,6 +33,9 @@ header{
     line-height: 50px;
     display: none;
 }
+  .close{
+      display:none;
+}
 nav{
     float: right;
     max-width: 500px;
@@ -45,17 +51,19 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     padding: 0 15px;  
+    font-size: 1em;
 }
 nav ul li a:hover{
     color: #ccc;
     text-decoration: none;
-    padding: 0 15px;  
+    padding: 0 15px;
+    font-size: 1em;
 }
 nav ul li a.active{
     color: #fff;
     text-decoration: none;
     padding: 0 15px; 
-    font-weight: bold; 
+    font-weight: bold;  
 }
 
 a.mainBtn{
@@ -100,7 +108,7 @@ h1.main-title{
 /*    font-family: "Arial", sans-serif;*/
     max-width: 680px;
     padding: 15px;
-    margin-top: -45px;
+    margin-top: -120px;
     text-transform: none;
 }
 
@@ -146,7 +154,11 @@ font-size: 16px;
     text-align: center;
     text-decoration: none;
 }
-.mainEvent .eventBtn a{
+.mainEvent .eventBtn{
+    
+}
+
+.mainEvent .eventBtn a.buyBtn{
     padding: 8px 15px;
     color: #fff;
     border: 1px solid #fff;
@@ -155,7 +167,11 @@ font-size: 16px;
 }
 
 
- 
+.eventTable{
+   overflow: hidden; 
+    width: 100%;
+    margin: 0 auto 50px;
+}
 
 table{
     color:#fff;
@@ -316,7 +332,77 @@ footer{
 }
 
 
+/*  Media Page  */
 
+.videoWrapper{
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    margin:50px auto;
+}
+.videoWrapper .video{
+    width: 50%;
+    float: left;
+    max-width: 600px;  
+    padding: 0 30px 0 0;
+}
+.videoWrapper .video iframe{
+    width: 100%;       
+}
+.videoWrapper .videoTitle{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;     
+}
+
+.photoWrapper{
+    width: 100%;
+    margin: 0 auto 120px;
+    overflow: hidden;
+}
+.photo{
+    width: 20%;
+    float: left;
+}
+
+.slider-size {
+    max-width: 250px;
+    height: 250px;
+}
+
+/*  Media Page  */
+
+/*    Contacts Page*/
+.contactInfo{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    color: #fff;
+}
+.contactForm{
+    margin: 0 auto;
+    width: 100%;
+}
+.contactForm form{
+    margin: 0 auto;
+    width: 500px;
+}
+.contactForm form input{
+    margin: 0 auto;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0 0 0;
+}
+.contactForm form textarea{
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    padding: 8px 10px;
+    margin: 10px 0 0 0;
+}
+
+
+/*    Contacts Page*/
 
 
 @media screen and (max-width: 600px) {
@@ -340,6 +426,7 @@ box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.55);
      float: none; 
 }
     .close{
+    display: block;
     position: relative;
     top: 15px;
     right: 15px;
@@ -349,12 +436,83 @@ box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.55);
 
 }
 
+
+
+
+
+/*    About page    */
+.bandName{
+    width: 150px;
+    color: #fff;
+    font-size:28px;
+    margin: 50px auto 30px;
+    text-align: center;
+}
+.bandDiscript{
+    color: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.memberBox{
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    height: 450px; 
+    background-color: #fff;
+}    
+.bandMember{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.bandMember .member{
+    width: 25%;
+    float: left;
+}
+.bandMember .thumbnail{
+    max-width: 225px;
+    margin: 0 auto;
+    border: 0;
+    box-shadow: none;
+}
+.bandMember .thumbnail .caption h4{
+    text-align: center;
+}
+.memberSoc{
+    width: 160px;
+    max-width: 160px;
+    z-index: 100;
+    margin: 15px auto 0;
+    display: table;
+}
+.memberSoc a{
+display: table-cell;
+    text-align: center;
+}
+.memberSoc i{
+  width: 25px;
+    height: 25px;
+    color: #ddd;
+    margin: 0 6px;
+    border-radius: 50%;
+    text-align: center;
+}
+.memberSoc i:hover{
+    color: #333;
+}
+
+
+
+/*    About page    */
+
+
 @media screen and (max-width: 480px) {
     .social{
         float: none;
         margin: 0px auto 0;
         padding-top: 15px;
-    }
+}
     .sandglass {
     display: none;
 }

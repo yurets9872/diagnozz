@@ -13,9 +13,12 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">    <!-- Bootstrap style -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">    <!-- Bootstrap theme -->
     
+    <link rel="stylesheet" type="text/css" href="../lighcase/src/css/lightcase.css/lightcase.css">
+
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   	
-	<title>Diagnozz | About</title>
+	<title>Diagnozz | Media</title>
 </head>
 <body>
 <section id="section1" class="cd-section">
@@ -28,7 +31,6 @@
                 <nav class="navigation">
                 <div class="close"><i class="fa fa-times"></i></div>
 	                <ul>
-<!--	                    <li><a href="#">Головна</a></li>-->
 	                    <li><a href="../html/events.html">Афіша</a></li>
 	                    <li><a href="../html/music.html">Музика</a></li>
 	                    <li><a class="active"  href="../html/media.html">Медіа</a></li>
@@ -40,7 +42,63 @@
 	        </div>
 	 </header>
 	 <div class="content">
-
+        <div class="videoWrapper">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1PA7372LhUI" frameborder="0" allowfullscreen></iframe>
+                <div class="videoTitle">Моє Небо - Діагноз</div>
+                
+            </div>
+               <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1PA7372LhUI" frameborder="0" allowfullscreen></iframe>
+                <div class="videoTitle">Моє Небо - Діагноз</div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=LaSBx_kFMf8" data-rel="lightcase:myCollection">
+                      Переглянути відео</a>
+        </div>
+        <div class="photoWrapper">
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+               <div class="photo">
+                <div style="background:url(../img/photo.jpg) center center; 
+                            background-size:cover;" class="slider-size"></div>
+            </div>
+            
+            
+        </div>
     </div>
     <footer>
         <div class="content">
@@ -63,5 +121,32 @@
 <script src="../js/main.js"></script> <!-- Resource jQuery -->
 <script src="../js/modernizr.js"></script> <!-- Modernizr -->
 <script src="../js/script.js"></script> <!-- Script -->
+<script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
+<script type="text/javascript" src="../lighcase/src/js/ightcase.js"></script><!-- lightbox-->
+
+   <script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('a[data-rel^=lightcase]').lightcase({
+//            iframe:{width : 'auto',
+//                    height : 'auto',
+//                    frameborder : 0
+//                    },
+            flash:{width : 400,
+                    height : 205,
+                    wmode : 'transparent'
+                        },
+            video:{
+            	width : 400,
+                height : 225,
+                poster : '',
+                preload : 'auto',
+                controls : true,
+                autobuffer : true,
+                autoplay : true,
+                loop : false
+                            }
+        });
+	});
+</script>
 </body>
 </html>
