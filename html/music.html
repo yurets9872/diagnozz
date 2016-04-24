@@ -54,7 +54,7 @@
             font-size: 18px;
         }
         .aplayer{
-            height: 350px;
+            height: auto;
             box-shadow: none;
             margin-top: 50px;
         }
@@ -64,6 +64,32 @@
         .aplayer .aplayer-pic {
             width: 300px;
             height: 300px;
+        }
+/*
+        .aplayer-ptime{
+            position: absolute;
+            left: -229px;
+        }
+*/
+        .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+                margin: 0 -7px 0 -7px !important;
+        }
+        .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+                bottom: 3px !important;
+        }
+        .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
+                background: #333;
+        }
+        .aplayer .aplayer-list ol li {
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+        }
+        .aplayer .aplayer-list {
+            max-height: 600px;
+        }
+        .aplayer .aplayer-list ol li .aplayer-list-cur {
+            top: 15px;
         }
     </style>
   	
@@ -92,6 +118,7 @@
             </div>
      </header> 
 	    <div class="content">
+        <div class="bandName">Музика</div>
 	        <div id="player4" class="aplayer"></div>
 	    </div>
  <footer>
