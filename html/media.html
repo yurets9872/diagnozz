@@ -5,19 +5,137 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-
+   
+    
 	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="../css/main.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
     
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">    <!-- Bootstrap style -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">    <!-- Bootstrap theme -->
-    
-    <link rel="stylesheet" type="text/css" href="../lighcase/src/css/lightcase.css/lightcase.css">
-
-    
+     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  	
+    
+  	<link href="../lightGallery/dist/css/lightgallery.css" rel="stylesheet">
+  	<style type="text/css">
+            body{
+                background-color: #152836
+            }
+            .demo-gallery > ul {
+              margin-bottom: 0;
+            }
+            .demo-gallery > ul > li {
+                float: left;
+                margin-bottom: 15px;
+                margin-right: 20px;
+                width: 200px;
+            }
+            .demo-gallery > ul > li a {
+              border: 3px solid #FFF;
+              border-radius: 3px;
+              display: block;
+              overflow: hidden;
+              position: relative;
+              float: left;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 80px;
+            }
+        </style>
 	<title>Diagnozz | Media</title>
 </head>
 <body>
@@ -44,61 +162,58 @@
 	 <div class="content">
        <div class="bandName">Медіа</div>
         <div class="videoWrapper">
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1PA7372LhUI" frameborder="0" allowfullscreen></iframe>
-                <div class="videoTitle">Моє Небо - Діагноз</div>
-                
-            </div>
-               <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1PA7372LhUI" frameborder="0" allowfullscreen></iframe>
-                <div class="videoTitle">Моє Небо - Діагноз</div>
-            </div>
-            <a href="https://www.youtube.com/watch?v=LaSBx_kFMf8" data-rel="lightcase:myCollection">
-                      Переглянути відео</a>
+
+       <div id="video-gallery">
+          <a href="https://www.youtube.com/watch?v=7X8tSVL_jtc" class="videoBox" data-poster="video-poster1.jpg" >
+              <img src="../lightGallery/demo/img/thumb-4.jpg" />
+          </a>
+           <a href="https://www.youtube.com/watch?v=7X8tSVL_jtc" class="videoBox" data-poster="video-poster1.jpg" >
+              <img src="../lightGallery/demo/img/thumb-4.jpg" />
+          </a>
+           <a href="https://www.youtube.com/watch?v=7X8tSVL_jtc" class="videoBox" data-poster="video-poster1.jpg" >
+              <img src="../lightGallery/demo/img/thumb-4.jpg" />
+          </a>
+        </div>
+<!--
+         <div class="videoBox"></div>
+          <a href="https://www.youtube.com/watch?v=meBbDqAXago" data-poster="video-poster1.jpg" >
+              <img src="../lightGallery/demo/img/thumb-4.jpg" />
+          </a>
+        </div>
+         <div class="videoBox"></div>
+          <a href="https://www.youtube.com/watch?v=meBbDqAXago" data-poster="video-poster1.jpg" >
+              <img src="../lightGallery/demo/img/thumb-4.jpg" />
+          </a>
+        </div>
+-->
+
+</div>
         </div>
         <div class="photoWrapper">
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-               <div class="photo">
-                <div style="background:url(../img/photo.jpg) center center; 
-                            background-size:cover;" class="slider-size"></div>
-            </div>
-            
-            
+              <div class="demo-gallery">
+            <ul id="lightgallery" class="list-unstyled row">
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="../lightGallery/demo/img/thumb-1.jpg">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" data-src="img/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="../lightGallery/demo/img/thumb-2.jpg">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="img/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="../lightGallery/demo/img/thumb-13.jpg">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="img/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="../lightGallery/demo/img/thumb-4.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
         </div>
     </div>
     <footer>
@@ -119,35 +234,40 @@
 	</section><!-- cd-section -->
 
 	<script src="../js/jquery-2.1.1.js"></script>
+	
+	 <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+            $('#video-gallery').lightGallery(); 
+            $('#video-player-param').lightGallery({
+    youtubePlayerParams: {
+        modestbranding: 1,
+        showinfo: 0,
+        rel: 0,
+        controls: 0
+    },
+    vimeoPlayerParams: {
+        byline : 0,
+        portrait : 0,
+        color : 'A90707'     
+    }
+});
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="../lightGallery/dist/js/lightgallery.js"></script>
+        <script src="../lightGallery/dist/js/lg-fullscreen.js"></script>
+        <script src="../lightGallery/dist/js/lg-thumbnail.js"></script>
+        <script src="../lightGallery/lightGallerydist/js/lg-video.js"></script>
+        <script src="../lightGallery/dist/js/lg-autoplay.js"></script>
+        <script src="../lightGallery/dist/js/lg-zoom.js"></script>
+        <script src="../lightGallery/dist/js/lg-hash.js"></script>
+        <script src="../lightGallery/dist/js/lg-pager.js"></script>
+        <script src="../lightGallery/lib/jquery.mousewheel.min.js"></script>
+	
 <script src="../js/main.js"></script> <!-- Resource jQuery -->
 <script src="../js/modernizr.js"></script> <!-- Modernizr -->
 <script src="../js/script.js"></script> <!-- Script -->
-<script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
-<script type="text/javascript" src="../lighcase/src/js/ightcase.js"></script><!-- lightbox-->
 
-   <script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$('a[data-rel^=lightcase]').lightcase({
-//            iframe:{width : 'auto',
-//                    height : 'auto',
-//                    frameborder : 0
-//                    },
-            flash:{width : 400,
-                    height : 205,
-                    wmode : 'transparent'
-                        },
-            video:{
-            	width : 400,
-                height : 225,
-                poster : '',
-                preload : 'auto',
-                controls : true,
-                autobuffer : true,
-                autoplay : true,
-                loop : false
-                            }
-        });
-	});
-</script>
 </body>
 </html>
